@@ -1,0 +1,612 @@
+/* ---------------------------------------------
+Table of contents
+------------------------------------------------
+01. font & reset css
+02. reset
+03. header area css
+
+
+--------------------------------------------- */
+/* 
+---------------------------------------------
+font & reset css
+--------------------------------------------- 
+*/
+/* 
+---------------------------------------------
+reset
+--------------------------------------------- 
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
+pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
+s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+figure, header, nav, section, article, aside, footer, figcaption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+ul, li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+header, nav, section, article, aside, footer, hgroup {
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  background-color: #fff;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+body{
+    overflow: hidden;
+}
+a {
+  text-decoration: none !important;
+}
+
+a:hover{
+    color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+ul {
+  margin-bottom: 0px;
+}
+
+p, a{
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #afafaf;
+}
+
+img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.main-btn{
+    background: linear-gradient(105deg, rgba(91,104,235,1) 0%, rgba(40,225,253,1) 100%);
+    padding: 0rem 0.8rem;
+    border-radius: 50px;
+}
+
+.section-title h3{
+    font-weight: bold;
+    margin-bottom: 0.7rem;
+}
+
+.section-title h3 span{
+    color: #4b8ef1;
+}
+
+.section-title img{
+    width: 50px;
+    height: 2px;
+    margin-bottom: 0.7rem;
+}
+/* -------------------------
+03. loader area css
+------------------------- */
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 999999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dot-pulse{
+    color: #4b8ef1 !important;
+}
+.dot-pulse::before, .dot-pulse::after {
+    color: #4b8ef1 !important;
+}
+/* -------------------------
+04. header area css
+------------------------- */
+.header-nav{
+    background-color: transparent;
+    padding: 0.8rem 0rem;
+    transition: 0.5s;
+    z-index: 99999;
+}
+.nav-link{
+    font-weight: 500;
+    color: #2a2a2a !important;
+}
+.nav-hov:hover{
+    color:#4b8ef1 !important;
+}
+.active{
+    color:#4b8ef1 !important;
+}
+.sign-btn a{
+    color: #fff !important;
+}
+.navbar-toggler{
+    border:0;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: 0 !important;
+}
+.toggler-icon{
+    width: 30px;
+    height: 2px;
+    background-color: black;
+    display: block;
+    transition: all 0.2s;
+}
+.middle-bar{
+    margin: 6.8px auto;
+}
+.navbar-toggler .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+   
+}
+.navbar-toggler .middle-bar {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.navbar-toggler .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+}
+.navbar-toggler.collapsed .top-bar {
+    transform: rotate(0);
+}
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.navbar-toggler.collapsed .bottom-bar {
+    transform: rotate(0);
+}
+.navbar-toggler.collapsed .toggler-icon {
+    background-color: black;
+}
+/* -------------------------
+05. home area css
+------------------------- */
+.home_container{
+    background-image: url('../images/slider-left-dec.png');
+    height: 130vh;
+    background-repeat: no-repeat;
+    background-size: 65% 820px;
+}
+.home_content{
+   padding-top: 8rem;
+}
+.home_content h1{
+    font-size: 3rem;
+    line-height: 4rem;
+}
+.home_content p{
+    color: #2a2a2a;
+    margin-top: 2rem;
+    font-size: 14px;
+    font-weight: 400;
+}
+.home_content .btn{
+    margin-top: 2.2rem;
+    background-color: #4b8ef1;
+    border: 0px;
+    padding: 0.5rem 1.2rem;
+    border-radius: 50px;
+}
+/* -------------------------
+06. services area css
+------------------------- */
+.services-container{
+    position: relative;
+}
+.services-container:before {
+    content: '';
+    background-image: url(../images/services-right-dec.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1136px;
+    height: 244px;
+    z-index: 0;
+}
+.services-content{
+    z-index: 1;
+    margin: 6rem auto !important;
+}
+.services-desc p span{
+    color: #1c65d3;
+}
+.our_services{
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+    border-top-right-radius: 50px;
+    transition: 0.4s;
+}
+.our_services:hover{
+    background-image: url('../images/service-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: cover;
+    color: #fff;
+}
+.our_services .img-hover{
+    display: none;
+}
+.our_services:hover img{
+    display: none;
+}
+.our_services:hover .img-hover{
+    display: initial;
+}
+.our_services:hover p{
+    color: #fff;
+}
+.our_services:hover a{
+    color: #fff;
+}
+.our_services img{
+    width: auto;
+    height: 45px;
+    margin-bottom: 2rem;
+}
+.our_services h5{
+    margin-bottom: 1rem;
+}
+.our_services p{
+    margin-bottom: 1.3rem;
+}
+.our_services p span{
+    color: #4b8ef1;
+}
+.our_services a{
+    color: #3777d8;
+    font-weight: 400;
+}
+.our_services a i{
+    margin-left: 0.2rem;
+    transition: 0.2s;
+}
+.our_services a:hover i{
+    margin-left: 0.5rem;
+}
+.services-container::after{
+    content: '';
+    background-image: url(../images/services-left-dec.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    bottom: -300px;
+    width: 261px;
+    height: 368px;
+    z-index: 0;
+}
+.our_services_container{
+    z-index: 111;
+}
+/* -------------------------
+07. about area css
+------------------------- */
+.about-container{
+    position: relative;
+    z-index: 1;
+    padding-top: 10rem;
+}
+.about-container::after{
+    background-image: url(../images/about-bg.jpg);
+    width: 777px;
+    height: 1132px;
+    content: '';
+    position: absolute;
+    background-repeat: no-repeat;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 0;
+}
+.about-left-part,
+.about-right-part{
+    z-index: 1;
+}
+.about-title{
+    padding-right: 5rem;
+}
+.about-title p{
+    margin: 1.3rem 0rem;
+}
+.about-us-desc{
+    margin-top: 1.2rem;
+    padding: 0.8rem 1.8rem;
+    background-color: #fff;
+    box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+    border-radius: 50px;
+}
+.about-us-desc h5{
+    cursor: pointer;
+    transition: 0.2s;
+}
+.about-us-desc:hover h5{
+    color: #4b8ef1;
+}
+.about-paragraph{
+    padding-right: 5rem;
+}
+.about-btn{
+    padding: 0.8rem 1.2rem;
+    color: #fff;
+    font-weight: 500;
+}
+/* -------------------------
+08. clients area css
+------------------------- */
+.clients-container{
+    position: relative;
+    z-index: 1;
+    padding-top: 8rem;
+}
+.client-container{
+    cursor: pointer;
+}
+.client-details{
+    width: 180px;
+}
+.client-details p{
+    font-weight: 400;
+}
+.client-type{
+    width: 160px;
+}
+.client-left-part{
+    margin-top: 6rem;
+    padding: 3rem 0rem;
+}
+.client-right-part{
+    margin-top: 4rem;
+}
+.client-left-part ul li:not(:first-child){
+    margin-top: 2.2rem;
+}
+.clients-reviews{
+    background-image: url('../images/client-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 3rem 2rem;
+    border-radius: 50px;
+    margin-bottom: 2rem;
+}
+.clients-reviews img{
+    width: 80px;
+    margin-bottom: 2rem;
+}
+.clients-reviews p{
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.client-info img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+.client-info p{
+    margin-top: 1rem;
+    color: #2a2a2a;
+}
+.client-name{
+    margin: 3rem 0rem 0rem 1rem;
+}
+.active-client{
+    color: #4b8ef1;
+}
+.client-right-part > div:not(:first-child){
+    display: none;
+}
+/* -------------------------
+09. pricing area css
+------------------------- */
+.pricing-area{
+    padding-top: 6rem;
+}
+.pricing-box{
+    background-color: #fff;
+    box-shadow: 0px 0px 15px rgb(0 0 0 / 7%);
+    border-radius: 50px;
+    padding: 2.5rem 2.2rem 5.5rem 2.2rem;
+    position: relative;
+    overflow: hidden;
+}
+.pricing-header h2{
+    color: #fff;
+    font-weight: bold;
+    opacity: 0.9;
+    font-size: 2.5rem;
+}
+.pricing-box::after{
+    content: '';
+    background-image: url('../images/regular-table-bottom.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    width: 370px;
+    height: 171px;
+    z-index: 0;
+}
+.pricing-box::before{
+    content: '';
+    background-image: url('../images/regular-table-top.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 274px;
+    height: 221px;
+    z-index: 0;
+}
+.pricing-body h5{
+    margin: 1rem 0rem;
+    font-weight: bold;
+}
+.pricing-body img{
+    width: 120px;
+    margin: 1rem 0rem;
+}
+.pricing-body ul li{
+    margin-top: 1rem;
+    color: #AFAFAF;
+}
+.pricing-footer{
+    position: relative;
+    margin-top: 3rem;
+    z-index: 1;
+}
+.pricing-footer a{
+    padding: 0.8rem 1.5rem;
+    color: #4b8ef1;
+    font-weight: 500;
+    border: 1px solid #4b8ef1;
+    border-radius: 50px;
+    transition: 0.2s;
+}
+.pricing-footer a:hover{
+    color: #fff;
+    background-color: #4b8ef1;
+}
+.active-box .pricing-box{
+    padding: 2.5rem 2.2rem 9rem 2.2rem;
+    top: -29px;
+}
+.active-box .pricing-box .pricing-body{
+   margin-top: 2.8rem;
+}
+.active-box .pricing-box::after{
+    content: '';
+    background-image: url('../images/pro-table-bottom.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    width: 370px;
+    height: 201px;
+    z-index: 0;
+}
+.active-box .pricing-box::before{
+    content: '';
+    background-image: url('../images/pro-table-top.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 281px;
+    height: 251px;
+    z-index: 0;
+}
+/* -------------------------
+09. footer area css
+------------------------- */
+.footer-section{
+    background-image: url('../images/footer-bg.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-bottom: 4rem;
+    padding-top: 20rem;
+    margin-top: 10rem;
+}
+.footer-title h2{
+    color: #fff;
+    margin-bottom: 3rem;
+}
+.footer-form input{
+    padding: 0.5rem 0rem;
+    width: 250px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+    margin: 0rem 1.2rem;
+    outline: none;
+}
+.footer-form input::placeholder{
+    color: #fff;
+}
+.footer-form button{
+    padding: 0.5rem 4rem;
+    color: #fff;
+    background-color: transparent;
+    border:1px solid #fff;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+.footer-form button:hover{
+    color: #4b8ef1;
+    background-color: #fff;
+}
+.contact-footer,
+.about-footer,
+.links-footer,
+.aboutCompany-footer{
+    margin-top: 4rem;
+    color: #fff;
+}
+.contact-footer h5,
+.about-footer h5,
+.links-footer h5,
+.aboutCompany-footer h5{
+    margin-bottom: 1.8rem;
+}
+.contact-footer p{
+    margin-top: 0.8rem;
+    color: #fff;
+}
+.contact-footer li,
+.about-footer li,
+.links-footer li,
+.aboutCompany-footer li{
+    margin-bottom: 0.8rem;
+    cursor: pointer;
+    font-size: 14.5px;
+}
+.about-item ul:nth-child(2){
+    margin-left: 1rem;
+}
+.aboutCompany-footer img{
+    width: 95px;
+    margin-bottom: 1.8rem;
+}
+.aboutCompany-footer p,
+.copy-right p{
+    color: #fff;
+}
+.copy-right{
+    margin-top: 4rem;
+}

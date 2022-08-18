@@ -1,0 +1,109 @@
+/* for medium device */
+@media (max-width: 991px) {
+    .navbar-nav{
+        margin-top: 1rem;
+    }
+    .navbar-nav li{
+        background-color:#f7f7f7 ;
+        padding: 0.5rem 0rem;
+        border-bottom: solid 1px #e5e5e5;
+    }
+    .navbar-nav li:nth-of-type(5){
+        border-bottom: none;
+    }
+    .sign-btn{
+      margin-top: 10px;
+    }
+    .home_container{
+        background-image: none !important;
+        height: auto !important;
+        padding-top: 3rem;
+    }
+    .home_content{
+       padding-top: 0;
+       text-align: center;
+    }
+    .home_content p{
+        color: #AFAFAF !important;
+    }
+    .our_services{
+        text-align: center;
+        margin-top: 1.2rem;
+    }
+    .about-container::after{
+        background-image: none !important;
+    }
+    .about-container{
+        text-align: center;
+    }
+    .about-us-content{
+        padding: 0rem 0.8rem;
+    }
+    .about-title{
+        padding-right: 0rem !important;
+    }
+    .about-paragraph{
+        padding-right: 0rem !important;
+    }
+    .client-type{
+        display: none;
+    }
+    .client-container{
+        justify-content: space-around;
+    }
+    .active-box .pricing-box{
+        top: 0px !important;
+    }
+    .contact-footer,
+    .aboutCompany-footer,
+    .links-footer,
+    .about-footer{
+        text-align: center;
+    }
+    .about-item{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .about-item ul:nth-child(2){
+        margin-left: 0rem !important;
+    }
+    .footer-section{
+        padding-top: 35rem !important;
+    }
+}
+/* for small device */
+@media (max-width: 762px) {
+    .home_container{
+        padding-top: 1.5rem;
+    }
+    .services{
+        padding-top: 1.5rem;
+    }
+    .client-container{
+        width: 215px;
+        margin: auto;
+        text-align: center;
+    }
+    .client-left-part{
+        margin-top: 1.8rem !important;
+    }
+    .client-details{
+        margin: auto;
+    }
+    .client-info{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .client-name{
+        margin: 0.8rem 0rem 0rem 0rem !important;
+    }
+    .footer-form input{
+        margin-bottom: 1rem !important;
+    }
+    .footer-section{
+        margin-top: -3rem !important;
+    }
+}
+
